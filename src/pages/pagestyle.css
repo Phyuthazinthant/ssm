@@ -1,0 +1,25 @@
+.noUi-tooltip {
+    display: none;
+  }
+  .noUi-active .noUi-tooltip {
+    display: block;
+  }
+  .noUi-connect {
+    background: #FFC107;
+}
+/* .noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle {
+    background: #FFC107;
+} */
+/* .noUi-target.noUi-horizontal .noUi-tooltip {
+    background-color: #FFC107;
+} */
+  @media only screen and (max-width:400px){
+    .loanText{
+        font-size: 14px;
+    } 
+  }
+.loanText{
+line-height: 2.3;
+background-color:		rgb(248, 249, 251);
+height: 100%;
+}

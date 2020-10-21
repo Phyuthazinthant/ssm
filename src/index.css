@@ -12,3 +12,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+html,body,p,div,*,table
+{
+  font-family:Myanmar3,Yunghkio,'Masterpiece Uni Sans';
+
+  font-style: initial;
+}
+

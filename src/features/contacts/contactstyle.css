@@ -1,0 +1,27 @@
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-size: xx-large;
+}
+/* for map css */
+.map-style{
+    height:450px;
+    z-index:3;
+    position:initial;
+    left:0px;
+    top:0px;
+    margin-top:5px;
+    transition-duration: 0.8s;
+    touch-action: pan-x pan-y;
+    transition: opacity ease-in-out;
+    background-color:white;
+    text-align: center; 
+    width:100%;
+}
+.contact-row{
+   padding-top:-50px;
+/* margin: 0 auto; */
+   margin-bottom:5px;
+}
+.gm-style-iw{
+    padding: 3%;
+}
