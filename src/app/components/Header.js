@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { getCategory } from '../../networks/categoryFetcher';
 import lan from '../../configs/language';
 import MMText from 'react-mm-text';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 export default class navbar extends Component {
     constructor(props) {
@@ -28,6 +30,7 @@ export default class navbar extends Component {
     render() {
         const clan = "mm"
         return (
+            <div>
             <nav className="navbar navbar-expand-lg navbar-light " style={{ backgroundColor: "#dab03c" }}>
                 <Link className="navbar-brand d-flex" to="#">
                     <img src={logo} alt="logo text" className="imgLogo rounded-circle " />
@@ -56,17 +59,17 @@ export default class navbar extends Component {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse dropdownclick " id="collapsibleNavbar">
-                    <ul className=" nav navbar-nav ml-auto ">
-                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <ul className=" nav navbar-nav ml-auto">
+                        <li className="nav-item mr-3 " data-toggle="collapse" data-target=".navbar-collapse.show">
                             <Link className="nav-link " to="/home">Home</Link>
                         </li>
-                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <li className="nav-item mr-3" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <Link className="nav-link " to="/discount/3">New Arrival</Link>
                         </li>
-                        <li className="nav-item " data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <li className="nav-item mr-3" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <Link className="nav-link " to="/discount/2">Popular </Link>
                         </li>
-                        <li className="nav-item dropdown " >
+                        <li className="nav-item dropdown mr-3" >
                             <Link to="#" className="nav-link ">Jwellery <i className="fa fa-caret-down"></i> </Link>
                             <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
                                 {
@@ -79,7 +82,7 @@ export default class navbar extends Component {
                             </li>
                         </li>
 
-                        <li className="nav-item dropdown " >
+                        <li className="nav-item dropdown mr-3" >
                             <Link to="#" className="nav-link ">Info <i className="fa fa-caret-down"></i> </Link>
                             <li className="dropdown-content small text-center" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <Link to="/service"> Convertor</Link>
@@ -87,13 +90,13 @@ export default class navbar extends Component {
                                 <Link to="/loan">Loan Calculator</Link>
                             </li>
                         </li>
-                        <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        <li className="nav-item mr-3" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <Link className="nav-link" to="/contactus">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
             </nav>
-
+           </div>
 
         )
     }

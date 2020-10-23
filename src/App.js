@@ -4,6 +4,7 @@ import './App.css';
 import Routes from './app/routes'
 import { BrowserRouter } from 'react-router-dom';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 class App extends Component {
   render() {
     return (
@@ -15,7 +16,7 @@ class App extends Component {
             pageId="2106354106282145"
             appId="842783163198279"
           />
-      </div>
+        </div>
 
     );
   }
