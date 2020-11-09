@@ -13,11 +13,10 @@ class App extends Component {
           <Routes />
         </BrowserRouter>
         <MessengerCustomerChat
-            pageId="2106354106282145"
-            appId="842783163198279"
-          />
-        </div>
-
+          pageId="2106354106282145"
+          appId="842783163198279"
+        />
+      </div>
     );
   }
 }
